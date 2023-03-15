@@ -11,12 +11,9 @@ function handleSubmit(event) {
     alert("Please fill in all the fields!");
   }
 
-  const forElements = event.currentTarget.elements;
-  const emailEl = forElements.email.value;
-  const passwordEl = forElements.password.value;
   const formData = {
-    emailEl,
-    passwordEl,
+    email: email.value,
+    password: password.value,
   };
   console.log(formData);
   form.reset();
