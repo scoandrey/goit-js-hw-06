@@ -6,12 +6,22 @@ const ingredients = [
   "Herbs",
   "Condiments",
 ];
-const vegtEl = document.querySelector("ul");
-ingredients.map((item) => {
-  const vegtNameEl = document.createElement("li");
-  vegtNameEl.textContent = item;
-  vegtNameEl.classList.add("item");
-  vegtEl.append(vegtNameEl);
-  return vegtNameEl;
+const vegts = document.querySelector("#ingredients");
+const vegtsArr = ingredients.map((item) => {
+  const vegtNames = document.createElement("li");
+  vegtNames.textContent = item;
+  vegtNames.classList.add("item");
+  return item;
 });
-console.log(vegtEl);
+vegts.append(...vegtsArr);
+console.log(vegts);
+// const ingredientsList = document.querySelector("#ingredients");
+
+// const items = ingredients.map(ingredient => {
+//   let item = document.createElement("li");
+//   item.innerText = ingredient;
+//   item.className = "item";
+//   return item;
+// });
+
+// ingredientsList.append(...items);
