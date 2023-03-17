@@ -17,8 +17,8 @@ const galleryMakeEl = images
   .map((item) => `<li><img src='${item.url}' alt='${item.alt}'/></li>`)
   .join("");
 galleryEl.insertAdjacentHTML("afterbegin", galleryMakeEl);
-gallery.style.display = "flex";
-gallery.style.flexWrap = "wrap";
-const galleryItemsList = document.querySelectorAll("li");
+galleryEl.style.display = "flex";
+galleryEl.style.flexWrap = "wrap";
+
 
 

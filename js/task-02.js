@@ -11,7 +11,7 @@ const vegtsArr = ingredients.map((item) => {
   const vegtNames = document.createElement("li");
   vegtNames.textContent = item;
   vegtNames.classList.add("item");
-  return item;
+  return vegtNames;
 });
 vegts.append(...vegtsArr);
 console.log(vegts);
